@@ -62,9 +62,8 @@ class TestGithubOrgClient(unittest.TestCase):
         ({}, {}, [], []),
         ({"repos_url": "https://api.github.com/orgs/test/repos"}, {}, [], []),
         ({}, {"name": "repo1"}, [{"name": "repo1"}], []),
-        ({}, {"name": "repo1", "license":
-                {"key": "apache-2.0"}}, [], [{"name": "repo1"}]),
-
+        ({}, {"name": "repo1", "license": {"key": "apache-2.0"}}, [],
+            [{"name": "repo1"}]),
     ]
 )
 class TestIntegrationGithubOrgClient(unittest.TestCase):
